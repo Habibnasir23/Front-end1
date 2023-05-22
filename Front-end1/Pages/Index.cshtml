@@ -12,11 +12,16 @@
 <div class="main">
     <form method="post" form="#">
     <h2>Table 1</h2>
-    <div class="table1">
-    <table>
+    <div class="table1" >
+        <table>
         <thead>
             <tr>
                 <th>Date</th>
+                <th>Part#</th>
+                <th>Description</th>
+                <th>Latest Dwg Rev</th>
+                <th>Machine Program Rev</th>
+                <th>Acceptable Inductance Range</th>
                 <th>Measurement 1</th>
                 <th>Measurement 2</th>
                 <th>Measurement 3</th>
@@ -26,17 +31,32 @@
         </thead>
         <tbody>
                 <tr>
+                    <td>
+                        <script type="text/javascript">
+                            <!--
+                            var currentTime = new Date()
+                            var month = currentTime.getMonth() + 1
+                            var day = currentTime.getDate()
+                            var year = currentTime.getFullYear()
+                            document.write(month + "/" + day + "/" + year)
+                            //-->
+                        </script>
+                    </td>
                         <td>
-                            <script type="text/javascript">
-                                <!--
-                                var currentTime = new Date()
-                                var month = currentTime.getMonth() + 1
-                                var day = currentTime.getDate()
-                                var year = currentTime.getFullYear()
-                                document.write(month + "/" + day + "/" + year)
-                                //-->
-                            </script>
+                            <form action="/pagename.html" method="post">
+                                <label for="cars">Choose a Part #:</label>
+                                <select name="part" id="part">
+                                    <option value="part1">2423400</option>
+                                    <option value="part2">2464000</option>
+                                    <option value="part3">2398000</option>
+                                </select>
+                                <br><br>
+                            </form>
                         </td>
+                    <td><input i="descr" type="text" name="descr" /></td>
+                    <td><input i="ldr" type="text" name="ldr" /></td>
+                    <td><input i="mpr" type="checkbox" name="mpr" /></td>
+                    <td><input i="aic" type="text" name="aic" /></td>
                     <td><input i="value1" type="text" placeholder="Value 1" name="value1" /></td>
                     <td><input i="value2" type="text" placeholder="Value 2" name="value2" /></td>
                     <td><input i="value3" type="text" placeholder="Value 3" name="value3" /></td>
@@ -47,7 +67,7 @@
     </table>
     </div>
     <!--submit the form-->
-        <input type="submit" value="Submit">
+        <input class="submit1" type="submit" value="Submit">
     </form>
 </div>
 

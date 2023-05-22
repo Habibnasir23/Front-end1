@@ -14,21 +14,22 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-}
-.field .table1 {
-    position: absolute;
-    top: 50%;
-    font-size: 18px;
-    pointer-events: none;
-    transform: translateY(-50%);
+    margin-bottom: 60px;
+    
 }
 
+
+
+.table1 {
+    background: #fff;
+}
+
+
 form input {
-    width: 100%;
+    width: 80px;
     height: 100%;
     outline: none;
-    padding: 0 45px;
+    padding: 0 1px;
     font-size: 12px;
     background: none;
     caret-color: #5372F0;
@@ -36,4 +37,19 @@ form input {
     border: 1px solid #bfbfbf;
     border-bottom-width:2px;
     transition: all 0.2s ease;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.submit1 {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    margin-left: 550px;
+    margin-top: 20px;
 }
