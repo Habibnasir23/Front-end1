@@ -20,10 +20,21 @@ body {
 
 
 
-.table1 {
-    background: #fff;
+/* Style the table */
+table {
+    width: 120px;
+    border-collapse: collapse;
 }
 
+th, td {
+    border: 1px solid #dddddd;
+    padding: 1px;
+    text-align: left;
+}
+
+th {
+    background-color: #dddddd;
+}
 
 form input {
     width: 80px;
