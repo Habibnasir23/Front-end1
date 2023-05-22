@@ -9,8 +9,10 @@
     <p>Garrett Metal Detectors</p>
 </div>
 
-<div class="table1">
+<div class="main">
+    <form method="post" form="#">
     <h2>Table 1</h2>
+    <div class="table1">
     <table>
         <thead>
             <tr>
@@ -24,7 +26,17 @@
         </thead>
         <tbody>
                 <tr>
-                    <td>05/22/23</td>
+                        <td>
+                            <script type="text/javascript">
+                                <!--
+                                var currentTime = new Date()
+                                var month = currentTime.getMonth() + 1
+                                var day = currentTime.getDate()
+                                var year = currentTime.getFullYear()
+                                document.write(month + "/" + day + "/" + year)
+                                //-->
+                            </script>
+                        </td>
                     <td><input i="value1" type="text" placeholder="Value 1" name="value1" /></td>
                     <td><input i="value2" type="text" placeholder="Value 2" name="value2" /></td>
                     <td><input i="value3" type="text" placeholder="Value 3" name="value3" /></td>
@@ -33,5 +45,10 @@
                 </tr>
         </tbody>
     </table>
+    </div>
+    <!--submit the form-->
+        <input type="submit" value="Submit">
+    </form>
 </div>
+
 
